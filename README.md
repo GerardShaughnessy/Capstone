@@ -31,14 +31,14 @@ In your repo, feel free to update this README and make any other initial changes
 
 _________________
 
-#Capstone Project Homework for 2.1
+# Capstone Project Homework for 2.1
 
 - **Capstone Idea (Definition Statement):**  I want to build an application that: is the cheapest and most professional film development destination.  
 
 - **Definition of Audience:  (Who will be using my application?)**
 Anybody with film, new or old, that does not have the means or the funds to develop their own film either by themselves or on a mainstream site
 
-##Outline of Content:  
+## Outline of Content:  
 - **What do I want on each page?  (text / pics / images / navigation)** Yes to all
 - **What do I want the functionality of each page to be?** Homepage with navigation and price calculator, order page, gallery of weekly favorites, and shopping cart
 - **What is the purpose of my application?** To provide affordable high quality development and scans for film photographers of all skill levels
