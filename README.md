@@ -59,3 +59,37 @@ https://processonephoto.com/mail-order-print-film-developing.htm
 - **List what you do not like about each site:** The darkroom is great, process one is very cheap but also looks cheap
 - **How my application will be different:**  I will have the quality of the darkroom with the prices of process one
 - **Third Pary API's** I will have social media and USPS API's
+
+
+## SWOT Analysis For My Capstone (Application)
+
+**S (Strengths)**
+
+Cheap, 
+Stress Free
+Local business
+(possibly local drop off)
+Environmentally friendly
+
+**W (Weaknesses)**
+
+Slow, 
+limit to how much film can be submitted at one time for a month turnaround 
+
+**O (Opportunities)**
+
+Every new film photographer, 
+St. Louis Film photographers,
+People who just found old film that they forgot about or maybe a relative passed 
+
+**T(Threats)** 
+
+Every local and online film development company
+People who will develop their own film 
+People who do not want to wait a little longer to get their film developed
+
+
+
+## Elevator Pitch:
+“At SlowLab, not only do we want to create the most hassle-free film developing environment / service, we want to be the most money conscious and green company out there.  We want to take all the time and care your film deserves while also limiting our carbon footprint.  Let us show you what we do” (Gallery button of other orders appears)
+
