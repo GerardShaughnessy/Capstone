@@ -58,3 +58,4 @@ https://processonephoto.com/mail-order-print-film-developing.htm
 - **List what you like about each site:** Clear and tells you everything you need to know
 - **List what you do not like about each site:** The darkroom is great, process one is very cheap but also looks cheap
 - **How my application will be different:**  I will have the quality of the darkroom with the prices of process one
+- **Third Pary API's** I will have social media and USPS API's
