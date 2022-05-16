@@ -16,6 +16,11 @@ nav {
 
 }
 
+.jumbotron {
+  align-content: right;
+  text-align: right;
+}
+
 footer {
 
 }
