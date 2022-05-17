@@ -26,9 +26,9 @@ function afterRender() {
 router
   .on({
     "/": () => render(),
-    ":view": params => {
-      let view = capitalize(params.data.view);
-      render(store[view]);
+    ":views": params => {
+      let views = capitalize(params.data.views);
+      render(store[views]);
     }
   })
   .resolve();

@@ -1,0 +1,146 @@
+html {
+
+}
+
+body {
+color: #056839;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  /* background-image: url(/Assets/img/SlowLab.png); */
+  background-color: rgb(210, 210, 210);
+  /* image-orientation: from-image; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.header-img {
+  max-height: 50px;
+  cursor: pointer;
+  /* max-height: 100%; */
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+  color: #056839;
+}
+
+.nav_links li a:hover {
+  color: #F1592A;
+}
+
+button {
+padding: 9px 25px;
+color: rgba(241, 89, 42, 1);
+border: none;
+border-radius: 50px;
+transition: all 0.3s ease 0s;
+cursor: pointer;
+}
+
+button:hover {
+color: #056839;
+}
+
+.nav-bar {
+  text-align: center;
+  color: #F1592A;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_bar li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-bar li a:visited {
+  color: #F1592A;}
+
+.nav_bar li a:hover {
+  color: #F1592A;
+}
+
+.jumbotron {
+  align-content: center;
+  text-align: center;
+}
+
+.wrapper {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  border: 2px;
+  border-color: #F1592A;
+  border-style: solid;
+  padding: 10px;
+  border-collapse: separate;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+}
+
+.item2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.item3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.item4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+/* .item5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.item6 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+} */
+
+footer {
+
+}
