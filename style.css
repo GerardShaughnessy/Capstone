@@ -1,9 +1,20 @@
 html {
-
+max-width: fit-content;
+max-height: none;
+margin: auto;
+/* background-image: linear-gradient(rgb(210, 210, 210), rgb(150, 150, 150)); */
 }
 
 body {
 color: #056839;
+background: scroll;
+
+
+}
+
+#jumbotron {
+text-align: center;
+align-content: center;
 }
 
 * {
@@ -15,37 +26,25 @@ color: #056839;
 
 header {
   /* background-image: url(/Assets/img/SlowLab.png); */
-  background-color: rgb(210, 210, 210);
+  /* background-color: rgb(210, 210, 210); */
   /* image-orientation: from-image; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  /* padding: 30px 10%; */
 }
 
-.header-img {
+nav {
+  padding: 30px 10%;
+
+}
+
+.nav-img {
   max-height: 50px;
   cursor: pointer;
   /* max-height: 100%; */
 }
 
-.nav_links {
-  list-style: none;
-}
-
-.nav_links li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.nav_links li a {
-  transition: all 0.3s ease 0s;
-  color: #056839;
-}
-
-.nav_links li a:hover {
-  color: #F1592A;
-}
 
 button {
 padding: 9px 25px;
@@ -61,29 +60,31 @@ color: #056839;
 }
 
 .nav-bar {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(210, 210, 210);
   text-align: center;
   color: #F1592A;
   list-style: none;
-  display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-.nav_bar li {
+nav > ul > li {
   display: inline-block;
-  padding: 0px 20px;
+  padding: 9px 10px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
-.nav-bar li a:visited {
+.nav-bar ul li a:visited {
   color: #F1592A;}
 
-.nav_bar li a:hover {
-  color: #F1592A;
-}
+.nav-bar ul li a:hover {
+  color:#056839;
+  transition: all 0.5s ease 0s;
 
-.jumbotron {
-  align-content: center;
-  text-align: center;
 }
 
 .wrapper {
@@ -91,11 +92,19 @@ color: #056839;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 100px;
-  border: 2px;
+  /* border: 2px;
   border-color: #F1592A;
   border-style: solid;
-  padding: 10px;
+  padding: 0px; */
   border-collapse: separate;
+}
+
+.item {
+height: 100%;
+width: 100%;
+border: 2px;
+border-color: #F1592A;
+border-style: solid;
 }
 
 .item1 {
@@ -103,7 +112,7 @@ color: #056839;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-
+  grid-area: auto;
 }
 
 .item2 {
@@ -127,19 +136,6 @@ color: #056839;
   grid-row-end: 3;
 }
 
-/* .item5 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-.item6 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-} */
 
 footer {
 
