@@ -1,6 +1,6 @@
 import html from "html-literal";
 
-import logo from "../../Capstone/Assets/img/croplogo.png";
+import logo from "../Assets/img/croplogo.png";
 
 export default state => html`
   <header>
