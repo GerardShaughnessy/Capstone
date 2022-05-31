@@ -9,15 +9,14 @@ const orderSchema = new mongoose.Schema({
   filmColor: {
     type: String,
     required: true,
-    enum: ["thin", "chicago", "deep-dish", "hella-thick"]
+    enum: ["color", "B&W", "infra", "unknown"]
   },
   prints: {
-    type: String,
+    type: Boolean,
     validate: /^[A-Za-z0-9 ]*$/
   },
   scans: {
-    type: String,
-    required: true,
+    type: Boolean,
     validate: /^[A-Za-z0-9 ]*$/
   },
   requests: [String]
