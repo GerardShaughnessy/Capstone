@@ -15,6 +15,9 @@ background: scroll;
 #jumbotron {
 text-align: center;
 align-content: center;
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 10px;
 }
 
 * {
@@ -97,6 +100,7 @@ nav > ul > li {
   border-style: solid;
   padding: 0px; */
   border-collapse: separate;
+
 }
 
 .item {
@@ -152,7 +156,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #F1592A;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -160,7 +164,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #056839;
 }
 
 /* Style the container/contact section */

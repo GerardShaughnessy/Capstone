@@ -1,5 +1,5 @@
 import html from "html-literal";
-import contactpic from "../../Assets/img/monster-children-film-processing-2-of-6.jpeg";
+import contactPic from "../../Assets/img/monster-children-film-processing-2-of-6.jpeg";
 export default () => html`
   <section id="Contact">
     <div class="container">
@@ -9,10 +9,7 @@ export default () => html`
       </div>
       <div class="row">
         <div class="column">
-          <img
-            src="../../Assets/img/monster-children-film-processing-2-of-6.jpeg"
-            style="width:100%"
-          />
+          <img src="${contactPic}" style="width:100%" />
         </div>
         <div class="column">
           <form action="/action_page.php">
