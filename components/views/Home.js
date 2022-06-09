@@ -3,7 +3,7 @@ import html from "html-literal";
 export default state => html`
   <section id="jumbotron">
   <article class="flow">
-  <div class="welcome"></div>
+  <div class="welcome">
   <h1>Welcome to SlowLab!</h1>
   <p>      We are proud to offer the cheapest film development service nationwide
       while maintaining the high quality development and scanning offered by our
