@@ -2,28 +2,63 @@ import html from "html-literal";
 
 export default state => html`
   <section id="jumbotron">
-    <h2>Welcome to SlowLab!</h2>
-    <p>
-      We are proud to offer the cheapest film development service nationwide
+  <article class="flow">
+  <div class="welcome"></div>
+  <h1>Welcome to SlowLab!</h1>
+  <p>      We are proud to offer the cheapest film development service nationwide
       while maintaining the high quality development and scanning offered by our
-      competitors!
-    </p>
-    <br />
-    <h3 class="home-grid">Our Process</h3>
+      competitors!</p>
+  </div>
+  <div class="team">
+    <ul class="auto-grid" role="list">
+      <li>
+        <a href="https://swop.link/cool" target=_blank" class="profile">
+          <h2 class="profile__name">First Step</h2>
 
-    <div class="wrapper">
-      <div class="item item1">
-        1. Let us know what type of scans or prints you would like!
-      </div>
-      <div class="item item2">
-        2. Mail us your film during the first two weeks of the month.
-      </div>
-      <div class="item item3">3. We will develop and scan if requested.</div>
-      <div class="item item4">
-        4. We will ship back your negatives and send a link for your RAW scans.
-      </div>
-      <!-- <div class="item5">5. </div>
-      <div class="item6">6</div> -->
+          <p>Fill out what type of scans or prints you would like!</p>
+          <img alt="Anita Simmons" src="https://source.unsplash.com/BhcutpohYwg/800x800" />
+        </a>
+      </li>
+      <li>
+        <a href="https://swop.link/cool" target=_blank" class="profile">
+          <h2 class="profile__name">Second Step</h2>
+          <p>Mail us your film during the first two weeks of the month.</p>
+          <img alt="Profile shot for Celina Harris" src="https://source.unsplash.com/j5KAuRrYX7g/800x800" />
+        </a>
+      </li>
+      <li>
+        <a href="https://swop.link/cool" target=_blank" class="profile">
+          <h2 class="profile__name">Third Step</h2>
+          <p>We will develop and scan if requested by end of the month.</p>
+          <img alt="Profile shot for Ruby Morris" src="https://source.unsplash.com/pQyIutdScOY/800x800" />
+        </a>
+      </li>
+      <li>
+        <a href="https://swop.link/cool" target=_blank" class="profile">
+          <h2 class="profile__name">Fourth Step</h2>
+          <p>We will ship back your negatives and email your scans</p>
+          <img alt="Profile shot for Nicholas Castro" src="https://source.unsplash.com/55JRsxcAiWE/800x800" />
+        </a>
+      </li>
+      <li>
+        <a href="https://swop.link/cool" target=_blank" class="profile">
+          <h2 class="profile__name">Review!</h2>
+          <p>We would love to hear how we can improve!</p>
+          <img alt="Profile shot for Marc Dixon" src="https://source.unsplash.com/5wn6DeAEcmE/800x800" />
+        </a>
+      </li>
+      <li>
+        <a href="https://swop.link/cool" target=_blank" class="profile">
+          <h2 class="profile__name">Come Back Soon!</h2>
+          <p>Please you are always welcome :) have a great day!</p>
+          <img alt="Profile shot for Chad" src="https://source.unsplash.com/7jCYw6a2Wao/800x800" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</article>
+
+    <br />
     </div>
   </section>
   <h3>
