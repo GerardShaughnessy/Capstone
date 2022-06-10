@@ -4,8 +4,12 @@ export default () => html`
   <section id="Contact">
     <div class="container">
       <div style="text-align:center">
-        <h2>Contact Us</h2>
-        <p>For questions, concerns, or leave us a nice message:</p>
+        <div class="welcome">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="welcome">
+          <p>For questions, concerns, or leave us a nice message:</p>
+        </div>
       </div>
       <div class="row">
         <div class="column">
