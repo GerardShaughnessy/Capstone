@@ -6,7 +6,7 @@ import img4 from "../../Assets/img/images.jpeg";
 import img5 from "../../Assets/img/7-Tips-To-Choose-the-Perfect-Computer-Keyboard-For-You-1024x768.jpeg";
 import img6 from "../../Assets/img/istockphoto-1310002736-170667a.jpg";
 
-export default state => html`
+export default () => html`
   <section id="jumbotron">
   <article class="flow">
     <div class=welcomeTop>
