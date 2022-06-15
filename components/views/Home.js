@@ -29,21 +29,21 @@ export default () => html`
       </li>
       <li>
         <a href="http://localhost:1234/Home" target=_blank" class="profile">
-          <h2 class="profile__name">Second Step</h2>
+          <h2 class="profile__name">Mail it!</h2>
           <p>Mail us your film during the first two weeks of the month.</p>
           <img alt="" src="${img2}" class="homeImg" />
         </a>
       </li>
       <li>
         <a href="http://localhost:1234/Home" target=_blank" class="profile">
-          <h2 class="profile__name">Third Step</h2>
+          <h2 class="profile__name">Develop and/or Scan</h2>
           <p>We will develop and scan if requested by end of the month.</p>
           <img alt="" src="${img3}" class="homeImg" />
         </a>
       </li>
       <li>
         <a href="http://localhost:1234/Home" target=_blank" class="profile">
-          <h2 class="profile__name">Fourth Step</h2>
+          <h2 class="profile__name">We mail it back!</h2>
           <p>We will ship back your negatives and email your scans</p>
           <img alt="" src="${img4}" class="homeImg" />
         </a>

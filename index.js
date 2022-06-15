@@ -16,14 +16,48 @@ function render(state = store.Home) {
   ${Footer()}
   `;
   router.updatePageLinks();
-  afterRender();
+  afterRender(state);
 }
 
-function afterRender() {
+function afterRender(state) {
   // add menu toggle to bars icon in nav bar
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
+
+  if (state.view === "Order") {
+    document.querySelector("form").addEventListener("submit", event => {
+      event.preventDefault();
+      const inputList = event.target.elements;
+      console.log("this is inputlist: ", inputList);
+
+      const developing = [];
+      for (let input of inputList) {
+        if (input.checked) {
+          developing.push(input.value);
+        }
+      }
+      const requestData = {
+        Color35: inputList.Color35.value,
+        BW35: inputList.BW35.value,
+        Color120: inputList.Color120.value,
+        BW120: inputList.BW120.value,
+        Scans: inputList.Maybe.value,
+        yesNo: inputList.yes_no.value,
+        customer: "Gerard"
+      };
+      axios
+        .post(`${process.env.MONGODB}`, requestData)
+        .then(response => {
+          console.log(response.data);
+          store.Order.order.push(response.data);
+          router.navigate("/Order");
+        })
+        .catch(error => {
+          console.log("It puked", error);
+        });
+    });
+  }
 }
 
 router.hooks({
@@ -55,7 +89,7 @@ router.hooks({
           console.log(err);
           done();
         });
-    } else if (view === "Pizza") {
+    } else if (view === "Order") {
       axios
         .get(`${process.env.PIZZA_PLACE_API_URL}`)
         .then(response => {

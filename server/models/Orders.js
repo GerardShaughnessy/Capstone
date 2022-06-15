@@ -1,25 +1,34 @@
+// const { type } = require("express/lib/response");
 const mongoose = require("mongoose");
-
+//
 const orderSchema = new mongoose.Schema({
-  filmSize: {
+  customer: {
     type: String,
     required: true,
     validate: /^[A-Za-z0-9 ]*$/
   },
-  filmColor: {
+  Color35: {
+    type: Number
+  },
+  BW35: {
+    type: Number
+  },
+  Color120: {
+    type: Number
+  },
+  BW120: {
+    type: Number
+  },
+  Maybe: {
     type: String,
-    required: true,
-    enum: ["color", "B&W", "infra", "unknown"]
+    require: true,
+    enum: ["Yes for all", "Yes for 35mm only", "Yes for 120mm only", "No"]
   },
-  prints: {
-    type: Boolean,
-    validate: /^[A-Za-z0-9 ]*$/
-  },
-  scans: {
-    type: Boolean,
-    validate: /^[A-Za-z0-9 ]*$/
-  },
-  requests: [String]
+  yes_no: {
+    type: String,
+    require: true,
+    enum: ["Yes", "No"]
+  }
 });
 
 const Order = mongoose.model("Order", orderSchema);

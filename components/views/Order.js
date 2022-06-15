@@ -6,27 +6,28 @@ export default () => html`
       <div class="welcome">
         <h2>Order</h2>
       </div>
-      <div class="develop">
+
         <div class="developHeading">
           <p>Developing:</p>
         </div>
-
-      <br />
+        <div class="develop">
+      <br>
+      <br>
       <div class="orderDev">
-      <label for="filmType">Color 35mm:</label>
-      <input type="number" id="filmType" name="Color35" min="0" max="10" />
+      <label for="Color35">Color 35mm:</label>
+      <input type="number" id="filmType1" name="Color35" min="0" max="10" =/>
       </div>
       <div class="orderDev">
-      <label for="filmType">B&W 35mm:</label>
-      <input type="number" id="filmType" name="BW35" min="0" max="10" />
+      <label for="BW35">B&W 35mm:</label>
+      <input type="number" id="filmType2" name="BW35" min="0" max="10" />
       </div>
       <div class="orderDev">
-      <label for="filmType">Color 120mm:</label>
-      <input type="number" id="filmType" name="Color120" min="0" max="10" />
+      <label for="Color120">Color 120mm:</label>
+      <input type="number" id="filmType3" name="Color120" min="0" max="10" />
       </div>
       <div class="orderDev">
-      <label for="filmType">B&W 120mm:</label>
-      <input type="number" id="filmType" name="BW120" min="0" max="10" />
+      <label for="BW120">B&W 120mm:</label>
+      <input type="number" id="filmType4" name="BW120" min="0" max="10" />
       </div>
       <br />
       <br />
@@ -37,7 +38,7 @@ export default () => html`
       </div>
         <br />
         <br />
-        <select id="scans" name="maybe">
+        <select id="scans" name="Maybe">
           <option value="">Select an option</option>
           <option value="Yes for all">Yes for all</option>
           <option value="Yes for 35mm only">Yes for 35mm only</option>
@@ -47,11 +48,16 @@ export default () => html`
       </div>
       <label for="filmType">Including Flash stick?:</label>
       <p>
-<input type="radio" name="yes_no" checked>Yes</input>
+<input for="yesNo" type="radio" name="yes_no" checked>Yes</input>
 </p>
 <p>
 <input type="radio" name="yes_no">No</input>
 </p>
+<br>
+
+    <div class="submit">
+    <input type="submit" name="submit" value="Submit Order" />
+    </div>
     </form>
   </section>
 `;
