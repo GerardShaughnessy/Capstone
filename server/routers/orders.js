@@ -43,9 +43,9 @@ router.put("/:id", (request, response) => {
       $set: {
         // Take note that the customer is not included, so it can't
         Color35: body.Color35,
-        BW35: body.BW35,
+        Bw35: body.Bw35,
         Color120: body.Color120,
-        BW120: body.BW120,
+        Bw120: body.Bw120,
         Scans: body.Scans,
         yesNo: body.yesNo
       }

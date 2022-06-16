@@ -10,13 +10,13 @@ const orderSchema = new mongoose.Schema({
   Color35: {
     type: Number
   },
-  BW35: {
+  Bw35: {
     type: Number
   },
   Color120: {
     type: Number
   },
-  BW120: {
+  Bw120: {
     type: Number
   },
   Maybe: {

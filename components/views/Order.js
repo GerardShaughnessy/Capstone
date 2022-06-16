@@ -15,19 +15,19 @@ export default () => html`
       <br>
       <div class="orderDev">
       <label for="Color35">Color 35mm:</label>
-      <input type="number" id="filmType1" name="Color35" min="0" max="10" =/>
+      <input type="number" name="Color35" id="filmType1" value=0  min="0" max="10" />
       </div>
       <div class="orderDev">
-      <label for="BW35">B&W 35mm:</label>
-      <input type="number" id="filmType2" name="BW35" min="0" max="10" />
+      <label for="Bw35">B&W 35mm:</label>
+      <input type="number" id="filmType2" value=0 name="Bw35" min="0" max="10" />
       </div>
       <div class="orderDev">
       <label for="Color120">Color 120mm:</label>
-      <input type="number" id="filmType3" name="Color120" min="0" max="10" />
+      <input type="number" id="filmType3" value=0 name="Color120" min="0" max="10" />
       </div>
       <div class="orderDev">
-      <label for="BW120">B&W 120mm:</label>
-      <input type="number" id="filmType4" name="BW120" min="0" max="10" />
+      <label for="Bw120">B&W 120mm:</label>
+      <input type="number" id="filmType4" value=0 name="Bw120" min="0" max="10" />
       </div>
       <br />
       <br />

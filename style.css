@@ -8,6 +8,7 @@ body {
 color: hsl(152, 91%, 21%);
 background: scroll;
 max-width: 58em;
+min-width: 58em;
 font-family: "Inter", sans-serif;
 margin: 0 auto;
 background-color: white;

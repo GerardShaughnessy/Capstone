@@ -13,10 +13,11 @@ export default () => html`
       </div>
       <div class="row">
         <div class="column">
+          <br /><br />
           <img src="${contactPic}" style="width:100%" />
         </div>
         <div class="column">
-          <form action="/action_page.php">
+          <form action="https://formspree.io/f/moqrbzle" method="POST">
             <label for="fname">First Name</label>
             <input
               type="text"
@@ -31,6 +32,14 @@ export default () => html`
               name="lastname"
               placeholder="Your last name.."
             />
+            <label for="email">Your Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+            />
+            <br />
             <label for="state">State/Territory</label>
             <select id="state" name="state">
               <option value="AL">Alabama</option>
@@ -98,10 +107,13 @@ export default () => html`
             <textarea
               id="subject"
               name="subject"
-              placeholder="How can we help you?"
-              style="height:170px"
+              placeholder="Subject?"
             ></textarea>
-            <input type="submit" value="Submit" />
+            <label>
+              Your message:
+              <textarea name="message" style="height:170px"></textarea>
+            </label>
+            <button type="submit">Send</button>
           </form>
         </div>
       </div>

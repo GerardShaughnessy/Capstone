@@ -38,20 +38,20 @@ function afterRender(state) {
         }
       }
       const requestData = {
+        customer: "Gerard",
         Color35: inputList.Color35.value,
-        BW35: inputList.BW35.value,
+        BW35: inputList.Bw35.value,
         Color120: inputList.Color120.value,
-        BW120: inputList.BW120.value,
+        BW120: inputList.Bw120.value,
         Scans: inputList.Maybe.value,
-        yesNo: inputList.yes_no.value,
-        customer: "Gerard"
+        yesNo: inputList.yes_no.value
       };
       axios
-        .post(`${process.env.MONGODB}`, requestData)
+        .post(`${process.env.PIZZA_PLACE_API_URL}`, requestData)
         .then(response => {
           console.log(response.data);
-          store.Order.order.push(response.data);
-          router.navigate("/Order");
+          store.Film.orders.push(response.data);
+          router.navigate("/Film");
         })
         .catch(error => {
           console.log("It puked", error);
@@ -67,7 +67,7 @@ router.hooks({
       view = capitalize(params.data.view);
     }
 
-    if (view === "other") {
+    if (view === "Home") {
       axios
         .get(
           `https://api.openweathermap.org/data/2.5/weather?appid=${process.env.OPEN_WEATHER_MAP_API_KEY}&q=st.%20louis`
@@ -93,7 +93,7 @@ router.hooks({
       axios
         .get(`${process.env.PIZZA_PLACE_API_URL}`)
         .then(response => {
-          store.Pizza.pizzas = response.data;
+          store.Film.orders = response.data;
           done();
         })
         .catch(error => {
