@@ -89,7 +89,7 @@ router.hooks({
           console.log(err);
           done();
         });
-    } else if (view === "Order") {
+    } else if (view === "Film") {
       axios
         .get(`${process.env.PIZZA_PLACE_API_URL}`)
         .then(response => {
