@@ -1,5 +1,5 @@
 html {
-height: 120em;
+height: auto;
 margin: auto;
 background-image: linear-gradient(rgb(255, 226, 189), rgb(255, 121, 19));
 }
@@ -584,6 +584,7 @@ border-radius: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
+
 }
 
 .galleryHeading {
