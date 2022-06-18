@@ -31,6 +31,7 @@ export default () => html`
           <img alt="" src="${img}" class="imgGallery" />
           <img alt="" src="${img3}" class="imgGallery" />
           <img alt="" src="${img4}" class="imgGallery" />
+          <img alt="" src="${img15}" class="imgGallery" />
         </div>
         <div class="columnGallery">
           <img alt="" src="${img6}" class="imgGallery" />
@@ -38,6 +39,8 @@ export default () => html`
           <img alt="" src="${img8}" class="imgGallery" />
           <img alt="" src="${img9}" class="imgGallery" />
           <img alt="" src="${img5}" class="imgGallery" />
+          <img alt="" src="${img16}" class="imgGallery" />
+          <img alt="" src="${img17}" class="imgGallery" />
         </div>
         <div class="columnGallery">
           <img alt="" src="${img10}" class="imgGallery" />
@@ -45,14 +48,10 @@ export default () => html`
           <img alt="" src="${img12}" class="imgGallery" />
           <img alt="" src="${img13}" class="imgGallery" />
           <img alt="" src="${img14}" class="imgGallery" />
-        </div>
-        <div class="columnGallery">
-          <img alt="" src="${img15}" class="imgGallery" />
-          <img alt="" src="${img16}" class="imgGallery" />
-          <img alt="" src="${img17}" class="imgGallery" />
           <img alt="" src="${img18}" class="imgGallery" />
           <img alt="" src="${img19}" class="imgGallery" />
         </div>
+        <div class="columnGallery"></div>
       </div>
     </div>
   </section>
