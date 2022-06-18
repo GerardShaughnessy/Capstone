@@ -25,27 +25,31 @@ function afterRender(state) {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
 
+  console.log(`matsinet-:state.view`, state.view);
+
   if (state.view === "Order") {
     document.querySelector("form").addEventListener("submit", event => {
       event.preventDefault();
       const inputList = event.target.elements;
-      console.log("this is inputlist: ", inputList);
+      // console.log("this is inputlist: ", inputList);
 
       const developing = [];
       for (let input of inputList) {
         if (input.checked) {
           developing.push(input.value);
         }
+        // console.log("this is developing: ", developing);
       }
       const requestData = {
         customer: "Gerard",
         Color35: inputList.Color35.value,
-        BW35: inputList.Bw35.value,
+        Bw35: inputList.Bw35.value,
         Color120: inputList.Color120.value,
-        BW120: inputList.Bw120.value,
+        Bw120: inputList.Bw120.value,
         Scans: inputList.Maybe.value,
         yesNo: inputList.yes_no.value
       };
+
       axios
         .post(`${process.env.PIZZA_PLACE_API_URL}`, requestData)
         .then(response => {

@@ -500,7 +500,7 @@ nav > .fa-bars {
     padding: 1em;
   }
 
-  #order {
+  #ordering {
     flex-direction: column;
     background-color: #e6e6e6;
     padding: 1em;
@@ -556,3 +556,5 @@ border-radius: 10px;
 #pizzas td,th {
   width: 25%;
 }
+
+/* Gallery */
