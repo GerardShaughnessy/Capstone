@@ -1,5 +1,5 @@
 html {
-height: 75em;
+height: 120em;
 margin: auto;
 background-image: linear-gradient(rgb(255, 226, 189), rgb(255, 121, 19));
 }
@@ -8,9 +8,9 @@ body {
 color: hsl(152, 91%, 21%);
 background: scroll;
 max-width: 58em;
-min-width: 58em;
+/* min-width: 58em; */
 font-family: "Inter", sans-serif;
-margin: 0 auto;
+margin: 5 auto;
 background-color: white;
 border: white;
 border-width: 30px;
@@ -337,10 +337,31 @@ input[type=submit]:hover {
   background-color: #056839;
 }
 
+
+
+
+/*Contact*/
+
+
+
+.contactHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  height: 4em;
+  background-color: rgb(234, 234, 234);
+  border-width: 10px;
+  border-radius: 15px;
+  margin: 1px 10px;
+  height: 6em;
+  /* width: 40em; */
+}
+
 /* Style the container/contact section */
 .container {
   border-radius: 5px;
-
   padding: 10px;
 }
 
@@ -558,3 +579,63 @@ border-radius: 10px;
 }
 
 /* Gallery */
+
+#galleryPhotos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.galleryHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 4em;
+  color: #056839;
+  background-color: rgb(234, 234, 234);
+  border-width: 10px;
+  border-radius: 15px;
+  margin: 1px 10px;
+  height: 6em;
+  padding-left: 6;
+  padding-right: 6;
+  width: 54em;
+}
+
+.rowGallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.columnGallery {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.imgGallery {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .columnGallery {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnGallery {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+

@@ -6,9 +6,10 @@ export default () => html`
       <div class="welcome">
         <h2>Order</h2>
       </div>
-
         <div class="developHeading">
           <p>Developing:</p>
+          <br>
+          <br>
         </div>
         <div class="develop">
       <br>
