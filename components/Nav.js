@@ -4,7 +4,7 @@ import logo from "../Assets/img/croplogo.png";
 export default links => html`
   <nav class="nav-bar">
     <img class="nav-img" src="${logo}" />
-    <i class="fas fa-bars"></i>
+    <i class="fa fa-bars" aria-hidden="true"></i>
     <ul class="hidden--mobile nav-links">
       ${links.map(
         link =>
@@ -12,5 +12,4 @@ export default links => html`
       )}
     </ul>
   </nav>
-  <!-- <a class="cta" href="#"><button>Home</button></a> -->
 `;
